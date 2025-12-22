@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <header>
@@ -17,16 +21,277 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="profile">
-        <img src="./img/profile.png" alt="" id="profile-pic" />
-        <div>
-          <h1 id="name-id">
-            Hey there, I'm Damar Adi Nugroho,h
-            <span style="color: aqua"> a Front-End Developer.</span>
-          </h1>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="profile">
+            <div class="image">
+              <img src="./img/profile.png" alt="Foto profile" />
+            </div>
+
+            <div class="profile-text">
+              <h1>Halo, saya <span class="name">Damar Adi Nugroho</span></h1>
+              <h2>Web Developer</h2>
+
+              <p class="desc profile">
+                Saya membuat pengalaman digital yang menarik dan fungsional
+                melalui pengembangan front-end. Dengan menggunakan HTML, CSS,
+                JavaScript, dan framework modern.
+              </p>
+
+              <div class="cta">
+                <a href="#portfolio" class="btn porto">Lihat Portfolio</a>
+                <a href="#contact" class="btn contact">Hubungi Saya</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- ABOUT -->
+      <section class="abouts" id="about">
+        <div class="container">
+          <p class="title-section">Tech Stack</p>
+          <h2 class="desc-section">Tech Stack yang Biasa Digunakan</h2>
+          <p class="desc about">
+            Saya adalah seorang web developer yang memiliki pengalaman dalam
+            mengembangkan aplikasi web menggunakan HTML, CSS, dan JavaScript.
+            Saya juga memiliki pengalaman dalam menggunakan framework
+          </p>
+          <div class="tech-stack">
+            <div class="tech-list">
+              <div class="tech-card">
+                <h4>Frontend</h4>
+                <div class="tech-item">
+                  <div class="tech-icon">
+                    <i class="devicon-html5-plain colored" id="icons"></i>
+                    <p>HTML5</p>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="devicon-css3-plain colored" id="icons"></i>
+                    <p>CSS3</p>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="devicon-javascript-plain colored" id="icons"></i>
+                    <p>JS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <h4>Backend</h4>
+                <div class="tech-item">
+                  <div class="tech-icon">
+                    <i class="devicon-nodejs-plain colored" id="icons"></i>
+                    <p>Node JS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <h4>Framwork & Library</h4>
+                <div class="tech-item">
+                  <div class="tech-icon">
+                    <i class="devicon-react-plain colored" id="icons"></i>
+                    <p>React</p>
+                  </div>
+                  <div class="tech-icon">
+                    <img
+                      style="width: 40px; height: 40px"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                    />
+                    <p>Vite</p>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="devicon-codeigniter-plain colored" id="icons"></i>
+                    <p>CodeIgniter</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <h4>Styling</h4>
+                <div class="tech-item">
+                  <div class="tech-icon">
+                    <img
+                      style="width: 40px; height: 40px"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                    />
+                    <p>Bootstrap</p>
+                  </div>
+                  <div class="tech-icon">
+                    <i
+                      class="devicon-tailwindcss-original colored"
+                      id="icons"
+                    ></i>
+                    <p>Tailwind CSS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <h4>Tools</h4>
+                <div class="tech-item">
+                  <div class="tech-icon">
+                    <i class="devicon-github-original colored" id="icons"></i>
+                    <p>GitHub</p>
+                  </div>
+                  <div class="tech-icon">
+                    <img
+                      style="width: 40px; height: 40px"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
+                    />
+
+                    <p>GitLab</p>
+                  </div>
+                  <div class="tech-icon">
+                    <img
+                      style="width: 40px; height: 40px"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                    />
+                    <p>Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+
+      <!-- PORTFOLIO -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <p class="title-section">Portfolio</p>
+          <h2 class="desc-section">Merancang Solusi yang Memberi Nilai</h2>
+          <p class="desc porto">
+            Setiap proyek dikembangkan dengan pendekatan yang terarah,
+            menggabungkan pemikiran strategis, kreativitas, dan pengembangan
+            front-end untuk menghadirkan solusi digital yang relevan dan dapat
+            berkembang.
+          </p>
+
+          <div class="card">
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/washprog.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">Cuci Sepatu WashProg</h3>
+                <p class="card-desc">
+                  Cuci Sepatu WashProg adalah aplikasi berbasis web untuk
+                  layanan cuci sepatu yang memudahkan pelanggan melakukan
+                  pemesanan secara online.
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/task.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">Voca Task</h3>
+                <p class="card-desc">
+                  Website task digunakan untuk mengelola dan memantau tugas.
+                  Sistem ini membantu pengguna dalam mencatat, mengatur
+                  prioritas.
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/bersihinaja.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">BersihinAja</h3>
+                <p class="card-desc">
+                  Website BersihinAja adalah platform layanan jasa kebersihan
+                  yang memudahkan pengguna untuk memesan layanan pembersihan
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
+
+      <!-- EXPERIENCE -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <p class="title-section">My Experience</p>
+          <h2 class="desc-section">Merancang Solusi yang Memberi Nilai</h2>
+          <p class="desc porto">
+            Setiap proyek dikembangkan dengan pendekatan yang terarah,
+            menggabungkan pemikiran strategis, kreativitas, dan pengembangan
+            front-end untuk menghadirkan solusi digital yang relevan dan dapat
+            berkembang.
+          </p>
+
+          <div class="card">
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/washprog.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">Cuci Sepatu WashProg</h3>
+                <p class="card-desc">
+                  Cuci Sepatu WashProg adalah aplikasi berbasis web untuk
+                  layanan cuci sepatu yang memudahkan pelanggan melakukan
+                  pemesanan secara online.
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/task.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">Voca Task</h3>
+                <p class="card-desc">
+                  Website task digunakan untuk mengelola dan memantau tugas.
+                  Sistem ini membantu pengguna dalam mencatat, mengatur
+                  prioritas.
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-item">
+                <img src="./img/bersihinaja.webp" alt="porto1" />
+              </div>
+              <div class="card-title">
+                <h3 class="card-name">BersihinAja</h3>
+                <p class="card-desc">
+                  Website BersihinAja adalah platform layanan jasa kebersihan
+                  yang memudahkan pengguna untuk memesan layanan pembersihan
+                </p>
+                <div>
+                  <a href="#" class="btn card">Lihat Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
     </main>
   </body>
 </html>
