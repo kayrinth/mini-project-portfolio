@@ -1,0 +1,256 @@
+@media (max-width: 768px) {
+  .desc-title {
+    line-height: 1.6;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 10px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #203a43;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  /*=======  HERO ========*/
+  .hero {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .cta {
+    display: flex;
+    align-items: unset;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #line {
+    display: none;
+  }
+
+  .profile {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .profile-text h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    color: #00f5ff;
+    margin: 10px 0 20px 0;
+  }
+
+  .profile-text p {
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .cta {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  /*=======  HERO ========*/
+
+  /*=======  PORTFOLIO ========*/
+  .portfolio {
+    margin: 40px 30px 0 30px;
+  }
+
+  .card-box {
+    width: 100%;
+  }
+  /*=======  PORTFOLIO ========*/
+
+  /*=======  TECH STACK ========*/
+  .tech {
+    margin: 40px 0 0 0;
+    padding: 40px 20px;
+  }
+
+  .tech-list {
+    gap: 30px;
+  }
+
+  .tech-card {
+    padding: 15px 15px;
+    display: flex;
+  }
+
+  .desc-section {
+    font-size: 28px;
+  }
+
+  .tech-card h4 {
+    font-size: 20px;
+  }
+
+  .tech-item {
+    gap: 15px;
+  }
+  /*=======  TECH STACK ========*/
+
+  /*=======  EXPERIENCE ========*/
+  .experience {
+    margin: 40px 0 0 0;
+    padding: 40px 20px;
+  }
+
+  .experience-header {
+    display: grid;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  .experience-loc {
+    gap: 5px;
+    display: grid;
+    justify-items: left;
+  }
+
+  .experience-company {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .experience-year {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 100;
+  }
+
+  .experience-item {
+    margin-top: 20px;
+    display: grid;
+    flex-direction: column;
+  }
+
+  .experience-dot {
+    display: none;
+  }
+
+  .experience-item {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-title {
+    font-size: 22px;
+  }
+
+  .experience-type {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  /*=======  EXPERIENCE ========*/
+
+  /*=======  TESTIMONIAL ========*/
+  .testimoni {
+    margin: 0;
+    padding: 0px 20px;
+  }
+
+  .testimonial-grid {
+    padding: 20px 0;
+    overflow: visible;
+  }
+
+  .testimonial-slides {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  .button-slides {
+    display: none;
+  }
+
+  .testimonial-box {
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*=======  TESTIMONIAL ========*/
+
+  /*======= CONTACT ========*/
+  .contacts {
+    margin: 40px 0 0 0;
+    padding: 40px 20px;
+  }
+
+  .contact-form {
+    gap: 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+  }
+
+  /*======= CONTACT ========*/
+}

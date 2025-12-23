@@ -4,36 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
     <header>
       <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-        </ul>
+        <div class="nav-container">
+          <div class="logo">- DAN -</div>
+
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
           <div class="profile">
             <div class="image">
-              <img src="./img/profile.png" alt="Foto profile" />
+              <img src="./img/profile.webp" alt="Foto profile" />
             </div>
 
             <div class="profile-text">
-              <h1>Halo, saya <span class="name">Damar Adi Nugroho</span></h1>
+              <h1>Halo, saya <span>Damar Adi Nugroho</span></h1>
               <h2>Web Developer</h2>
-
-              <p class="desc profile">
+              <p>
                 Saya membuat pengalaman digital yang menarik dan fungsional
                 melalui pengembangan front-end. Dengan menggunakan HTML, CSS,
                 JavaScript, dan framework modern.
@@ -42,18 +59,48 @@
               <div class="cta">
                 <a href="#portfolio" class="btn porto">Lihat Portfolio</a>
                 <a href="#contact" class="btn contact">Hubungi Saya</a>
+                <div id="line"></div>
+                <div class="social-media">
+                  <a
+                    href="https://www.linkedin.com/in/damar-adi-nugroho-a79725331/"
+                    target="_blank"
+                  >
+                    <i
+                      class="devicon-linkedin-plain"
+                      id="icons"
+                      style="color: white"
+                    ></i>
+                  </a>
+                  <a href="https://github.com/kayrinth" target="_blank">
+                    <i
+                      class="devicon-github-plain colored"
+                      id="icons"
+                      style="color: white"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/damar.an_?igsh=MXVoZ3hoeDRvbmUyeQ=="
+                    target="_blank"
+                  >
+                    <i
+                      class="fa fa-instagram"
+                      id="icons"
+                      style="color: white"
+                    ></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section class="abouts" id="about">
+      <!-- TECH STACK -->
+      <section class="tech">
         <div class="container">
-          <p class="title-section">Tech Stack</p>
-          <h2 class="desc-section">Tech Stack yang Biasa Digunakan</h2>
-          <p class="desc about">
+          <p id="title-section">Tech Stack</p>
+          <h2>Tech Stack yang Biasa Digunakan</h2>
+          <p class="desc-title">
             Saya adalah seorang web developer yang memiliki pengalaman dalam
             mengembangkan aplikasi web menggunakan HTML, CSS, dan JavaScript.
             Saya juga memiliki pengalaman dalam menggunakan framework
@@ -157,14 +204,15 @@
           </div>
         </div>
       </section>
-      <!-- ABOUT -->
+      <!-- TECH STACK -->
 
       <!-- PORTFOLIO -->
       <section class="portfolio" id="portfolio">
         <div class="container">
-          <p class="title-section">Portfolio</p>
-          <h2 class="desc-section">Merancang Solusi yang Memberi Nilai</h2>
-          <p class="desc porto">
+          <p id="title-section">Portfolio</p>
+          <h2>Merancang Solusi yang Memberi Nilai</h2>
+
+          <p class="desc-title">
             Setiap proyek dikembangkan dengan pendekatan yang terarah,
             menggabungkan pemikiran strategis, kreativitas, dan pengembangan
             front-end untuk menghadirkan solusi digital yang relevan dan dapat
@@ -177,8 +225,8 @@
                 <img src="./img/washprog.webp" alt="porto1" />
               </div>
               <div class="card-title">
-                <h3 class="card-name">Cuci Sepatu WashProg</h3>
-                <p class="card-desc">
+                <h3>Cuci Sepatu WashProg</h3>
+                <p>
                   Cuci Sepatu WashProg adalah aplikasi berbasis web untuk
                   layanan cuci sepatu yang memudahkan pelanggan melakukan
                   pemesanan secara online.
@@ -194,8 +242,8 @@
                 <img src="./img/task.webp" alt="porto1" />
               </div>
               <div class="card-title">
-                <h3 class="card-name">Voca Task</h3>
-                <p class="card-desc">
+                <h3>Voca Task</h3>
+                <p>
                   Website task digunakan untuk mengelola dan memantau tugas.
                   Sistem ini membantu pengguna dalam mencatat, mengatur
                   prioritas.
@@ -211,8 +259,8 @@
                 <img src="./img/bersihinaja.webp" alt="porto1" />
               </div>
               <div class="card-title">
-                <h3 class="card-name">BersihinAja</h3>
-                <p class="card-desc">
+                <h3>BersihinAja</h3>
+                <p>
                   Website BersihinAja adalah platform layanan jasa kebersihan
                   yang memudahkan pengguna untuk memesan layanan pembersihan
                 </p>
@@ -229,69 +277,182 @@
       <!-- EXPERIENCE -->
       <section class="experience" id="experience">
         <div class="container">
-          <p class="title-section">My Experience</p>
-          <h2 class="desc-section">Merancang Solusi yang Memberi Nilai</h2>
-          <p class="desc porto">
+          <p id="title-section">My Experience</p>
+          <h2>Pengalaman Saya dalam pengembangan Website</h2>
+          <p class="desc-title">
             Setiap proyek dikembangkan dengan pendekatan yang terarah,
             menggabungkan pemikiran strategis, kreativitas, dan pengembangan
             front-end untuk menghadirkan solusi digital yang relevan dan dapat
             berkembang.
           </p>
+          <div>
+            <div class="experience-list">
+              <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h3 class="experience-title">Internship Web Developer</h3>
+                <div class="experience-card">
+                  <div class="experience-header">
+                    <div class="experience-loc">
+                      <span class="experience-type">Intern</span>
+                      <span class="experience-company">DIALOGIKA</span>
+                    </div>
+                    <p class="experience-year">Mar 2025 – Jun 2025</p>
+                  </div>
 
-          <div class="card">
-            <div class="card-box">
-              <div class="card-item">
-                <img src="./img/washprog.webp" alt="porto1" />
-              </div>
-              <div class="card-title">
-                <h3 class="card-name">Cuci Sepatu WashProg</h3>
-                <p class="card-desc">
-                  Cuci Sepatu WashProg adalah aplikasi berbasis web untuk
-                  layanan cuci sepatu yang memudahkan pelanggan melakukan
-                  pemesanan secara online.
-                </p>
-                <div>
-                  <a href="#" class="btn card">Lihat Project</a>
+                  <p class="experience-stack">HTML, CSS, NEXT JS</p>
+                  <p class="experience-desc">
+                    Memelihara website perusahaan dengan memperbarui konten,
+                    memperbaiki bug, dan mengembangkan fitur baru untuk push
+                    artikel di blog perusahaan.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="card-box">
-              <div class="card-item">
-                <img src="./img/task.webp" alt="porto1" />
-              </div>
-              <div class="card-title">
-                <h3 class="card-name">Voca Task</h3>
-                <p class="card-desc">
-                  Website task digunakan untuk mengelola dan memantau tugas.
-                  Sistem ini membantu pengguna dalam mencatat, mengatur
-                  prioritas.
-                </p>
-                <div>
-                  <a href="#" class="btn card">Lihat Project</a>
+            <div class="experience-list">
+              <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h3 class="experience-title">
+                  Asisten <br />
+                  Praktikum
+                </h3>
+                <div class="experience-card">
+                  <div class="experience-header">
+                    <div class="experience-loc">
+                      <span class="experience-type">Asisten</span>
+                      <span class="experience-company"
+                        >Universitas Amikom Yogyakarta</span
+                      >
+                    </div>
+                    <p class="experience-year">Sep 2024 – Jan 2025</p>
+                  </div>
+
+                  <p class="experience-stack">KOTLIN</p>
+                  <p class="experience-desc">
+                    Membantu mahasiswa dalam memahami konsep dasar pemrograman
+                    menggunakan bahasa Kotlin. Memberikan bimbingan praktis dan
+                    menjawab pertanyaan terkait materi yang diajarkan.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="card-box">
-              <div class="card-item">
-                <img src="./img/bersihinaja.webp" alt="porto1" />
-              </div>
-              <div class="card-title">
-                <h3 class="card-name">BersihinAja</h3>
-                <p class="card-desc">
-                  Website BersihinAja adalah platform layanan jasa kebersihan
-                  yang memudahkan pengguna untuk memesan layanan pembersihan
-                </p>
-                <div>
-                  <a href="#" class="btn card">Lihat Project</a>
+            <div class="experience-list">
+              <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h3 class="experience-title">
+                  Studi <br />
+                  Independent
+                </h3>
+                <div class="experience-card">
+                  <div class="experience-header">
+                    <div>
+                      <div class="experience-loc">
+                        <span class="experience-type">Bootcamp</span>
+                        <span class="experience-company">VOCASIA</span>
+                      </div>
+                    </div>
+                    <p class="experience-year">Sep 2024 – Des 2024</p>
+                  </div>
+
+                  <p class="experience-stack">MERN Stack</p>
+                  <p class="experience-desc">
+                    Mempelajari konsep dasar dan lanjutan dalam pengembangan web
+                    menggunakan teknologi MERN Stack (MongoDB, Express.js,
+                    React.js, Node.js). Membangun proyek-proyek praktis untuk
+                    mengasah keterampilan pengembangan web.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- PORTFOLIO -->
+      <!-- EXPERIENCE -->
+
+      <!--- TESTIMONI -->
+      <section class="testimoni" id="testimoni">
+        <div class="container testimoni">
+          <p id="title-section">Testimonial</p>
+          <h2>Pengalaman Pelanggan</h2>
+          <p class="desc-title">
+            Berikut adalah beberapa testimoni dari pelanggan yang telah bekerja
+            sama dengan saya dan memberikan pengalaman positif terhadap hasil
+            yang saya kerjakan.
+          </p>
+          <div class="testimonial-grid">
+            <div class="testimonial-slides">
+              <div class="testimonial-box">
+                <h3 class="testimonial-title">Yandi Novia</h3>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-content">
+                  Desain webnya sangat menarik dan fungsional. Damar benar-benar
+                  memahami kebutuhan saya dan mengubahnya menjadi kenyataan.
+                </p>
+              </div>
+              <div class="testimonial-box">
+                <h3 class="testimonial-title">Dani</h3>
+                <div class="testimonial-rating">★★★★</div>
+                <p class="testimonial-content">
+                  Damar sangat profesional dan komunikatif selama proses
+                  pengembangan. Hasil akhirnya melebihi harapan saya.
+                </p>
+              </div>
+              <div class="testimonial-box">
+                <h3 class="testimonial-title">Doni Putra</h3>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-content">
+                  Saya sangat puas dengan layanan yang diberikan oleh Damar.
+                  Website yang dibuatnya membantu meningkatkan bisnis saya
+                  secara signifikan.
+                </p>
+              </div>
+              <div class="testimonial-box">
+                <h3 class="testimonial-title">Murad</h3>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-content">
+                  Damar adalah seorang web developer yang sangat berbakat.
+                  Kreativitas dan perhatian terhadap detailnya terlihat jelas
+                  dalam setiap proyek yang dia kerjakan.
+                </p>
+              </div>
+              <div class="testimonial-box">
+                <h3 class="testimonial-title">Nadya</h3>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-content">
+                  Saya merekomendasikan Damar kepada siapa pun yang mencari web
+                  developer yang andal dan berkualitas. Dia benar-benar mengerti
+                  bagaimana menghadirkan solusi digital yang efektif.
+                </p>
+              </div>
+            </div>
+            <button id="prev" class="button-slides">‹</button>
+            <button id="next" class="button-slides">›</button>
+          </div>
+        </div>
+      </section>
+      <!--- TESTIMONI -->
+
+      <!---- CONTACT ---->
+      <section class="contacts" id="contact">
+        <div class="container">
+          <p id="title-section">Kontak</p>
+          <h2>Hubungi Saya</h2>
+          <p class="desc-title">
+            Jika Anda memiliki pertanyaan atau ingin bekerja sama, silakan
+            hubungi saya melalui form berikut.
+          </p>
+          <form class="contact-form">
+            <div>
+              <input type="text" placeholder="Nama" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <textarea placeholder="Pertanyaan"></textarea>
+            <button type="submit" class="btn-contact">Kirim</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <script src="styles.js"></script>
   </body>
 </html>
