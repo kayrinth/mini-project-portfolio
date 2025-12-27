@@ -10,6 +10,13 @@
   .container h2 {
     text-align: center;
     color: white;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .container h3 {
+    text-align: center;
+    color: white;
     font-size: 25px;
     margin-bottom: 0;
   }
@@ -211,6 +218,12 @@
   .testimonial-grid {
     padding: 20px 0;
     overflow: visible;
+  }
+
+  .testimonial-content {
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-weight: 100;
   }
 
   .testimonial-slides {
